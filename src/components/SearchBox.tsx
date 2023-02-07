@@ -74,14 +74,14 @@ const SearchBox: React.FC<Props> = ({ suggestions: initialSuggestions }) => {
             ))}
           <li className="mx-2 flex justify-evenly py-1">
             <button
-              className="border-box block justify-center rounded-lg border-2 border-white px-2 text-center font-medium text-gray-700 hover:border-gray-300 disabled:text-gray-400"
+              className="border-box block justify-center rounded-lg border-2 border-white px-2 text-center font-medium leading-relaxed text-gray-700 hover:border-gray-300 disabled:text-gray-400"
               onClick={handleSearch}
               disabled={query.length === 0}
             >
               Search
             </button>
             <button
-              className="border-box block justify-center rounded-lg border-2 border-white px-2 text-center font-medium text-gray-700 hover:border-gray-300 disabled:text-gray-400"
+              className="border-box block justify-center rounded-lg border-2 border-white px-2 text-center font-medium leading-relaxed text-gray-700 hover:border-gray-300 disabled:text-gray-400"
               onClick={handleFeelingLucky}
             >
               Feeling Lucky

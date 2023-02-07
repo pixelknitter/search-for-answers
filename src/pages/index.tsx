@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
         <header>
-          <h1>Search For Answers</h1>
+          <h1 className="text-2xl font-bold text-white">Search For Answers</h1>
         </header>
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           {search.isFetched && search.data ? (
