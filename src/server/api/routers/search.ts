@@ -66,7 +66,7 @@ export const searchRouter = createTRPCRouter({
       return {
         suggestions: input.searchText
           ? hardSuggestions.filter((suggestion) =>
-              suggestion.includes(input.searchText)
+              suggestion.startsWith(input.searchText)
             )
           : hardSuggestions,
       };
